@@ -10,7 +10,9 @@ public class Consumer extends Thread{
             f.consume();
             try{
                 Thread.sleep(2000);
-            }catch(Exception e){}
+            }catch(Exception e){
+                e.printStackTrace();
+            }
             i++;
         }
     }
